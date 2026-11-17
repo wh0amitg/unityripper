@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "unityripper"
+version = "1.0.0"
+description = "Model decompiler / ripper for Unity games (Mono and IL2CPP builds)"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "UnityPy>=1.25.0",
+    "Pillow>=10.0.0",
+    "numpy>=1.24",
+    "texture2ddecoder>=1.0.5",
+]
+
+[project.scripts]
+unityripper = "unityripper.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["unityripper*"]
