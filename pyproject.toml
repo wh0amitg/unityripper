@@ -4,8 +4,9 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "unityripper"
-version = "1.0.0"
+version = "1.0.1"
 description = "Model decompiler / ripper for Unity games (Mono and IL2CPP builds)"
+readme = { file = "PYPI.md", content-type = "text/markdown" }
 requires-python = ">=3.10"
 license = { text = "MIT" }
 dependencies = [
